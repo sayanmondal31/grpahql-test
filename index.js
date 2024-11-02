@@ -41,6 +41,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  plugins: [ApolloServerPluginLandingPageDisabled()],
 });
 
 const apolloServerStart = async () => {
