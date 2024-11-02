@@ -5,6 +5,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { ApolloServerPluginLandingPageDisabled } from '@apollo/server/plugin/disabled';
 
 import userResolvers from "./resolvers/userResolvers.js";
 import todoResolvers from "./resolvers/todoResolvers.js";
